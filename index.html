@@ -18,29 +18,39 @@
         width="150"
       />
       <h1>Aqualine</h1>
-    </div>
+      </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-    
+  
+
       // ======================== Button #1
       $("#button1").click(function () {
-       
+
+       $(".avatar").animate({
+width:"400px",
+marginLeft:"30px",
+borderWidth :"10px"}
+,1500);
       });
 
       // ======================== Button #2
       $("#button2").click(function () {
-     
+     $(".avatar").animate({
+      width:"140px",
+
+     })
       });
 
       // ======================== Button #3
       $("#button3").click(function () {
-    
+    $(".avatar").css("transform", "rotate(180deg)");
+
       });
 
        // ======================== Button #3
       $("#button4").click(function () {
-    
+    $(".avatar").css("transform", "rotate(270deg)");
       });
     
     
